@@ -1,0 +1,5 @@
+alias mtr="sudo /usr/local/sbin/mtr"
+
+alias ttmux="tmux -CC attach"
+
+alias fix_camera="sudo killall VDCAssistant"
