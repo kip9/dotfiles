@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+name = Jakub Jakubiec
+email = jjakubiec@gmail.com
+[push]
+	default = simple
+[alias]
+	cleanmerged = "!git branch --merged | grep -v '^\\* master$' | grep -v '^  master$' | xargs git branch -d"
