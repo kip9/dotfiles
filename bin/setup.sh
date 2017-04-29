@@ -19,6 +19,10 @@ function process_files() {
     filename="$(basename $file)"
     destination="$HOME/$filename"
     if [[ -e "$destination" ]]; then
+      if [[ "$file" -ef "$destination" ]] ; then
+        print_info "$file already exists, skipping"
+        continue
+      fi
       print_info "Making backup of $destination"
       [[ -e "$backup_dir" ]] || mkdir -p "$backup_dir"
       # Backup file / link / whatever.
