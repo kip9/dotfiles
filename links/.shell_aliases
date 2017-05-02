@@ -1,3 +1,4 @@
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 alias fix_camera="sudo killall VDCAssistant"
 alias mtr="sudo /usr/local/sbin/mtr"
 alias prettyjson="python -m json.tool"
