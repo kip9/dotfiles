@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew Composer docker git vagrant tmux zsh-completions)
+plugins=(aws brew Composer docker git gpg-agent osx ssh-agent tmux vagrant)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -91,6 +91,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias reload='source ~/.zshrc'
+
+# Custom completions
+plugins+=(zsh-completions)
 
 # Enable aws completion
 source /usr/local/share/zsh/site-functions/_aws

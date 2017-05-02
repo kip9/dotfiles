@@ -1,5 +1,6 @@
-alias mtr="sudo /usr/local/sbin/mtr"
-
-alias ttmux="tmux -CC attach"
-
 alias fix_camera="sudo killall VDCAssistant"
+alias mtr="sudo /usr/local/sbin/mtr"
+alias prettyjson="python -m json.tool"
+alias spip='sudo -H pip'
+alias tm="tmux attach-session -t "
+alias ttmux="tmux -CC attach"
