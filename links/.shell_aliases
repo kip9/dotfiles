@@ -6,3 +6,9 @@ alias prettyjson="python -m json.tool"
 alias spip='sudo -H pip'
 alias tm="tmux attach-session -t "
 alias ttmux="tmux -CC attach"
+
+alias fs-tests-all="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagrant && ./lib/vendor/phpunit/phpunit/phpunit -c tests/phpunit.xml tests/'"
+alias fs-tests-unit="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagrant && ./lib/vendor/phpunit/phpunit/phpunit -c tests/phpunit.xml tests/unit'"
+alias fs-tests-legacy="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagrant && ./lib/vendor/phpunit/phpunit/phpunit -c tests/phpunit.xml tests/legacy-unit'"
+
+alias workspace-bash="docker-compose exec workspace bash"
