@@ -6,3 +6,5 @@ email = jjakubiec@gmail.com
 	default = simple
 [alias]
 	cleanmerged = "!git branch --merged | grep -v '^\\* master$' | grep -v '^  master$' | xargs git branch -d"
+[gpg]
+	program = gpg2
