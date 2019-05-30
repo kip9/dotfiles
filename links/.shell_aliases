@@ -12,3 +12,5 @@ alias fs-tests-unit="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagra
 alias fs-tests-legacy="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagrant && ./lib/vendor/phpunit/phpunit/phpunit -c tests/phpunit.xml tests/legacy-unit'"
 
 alias workspace-bash="docker-compose exec workspace bash"
+
+alias awk-csv="gawk -vFPAT='[^,]*|\"[^\"]*\"'"
