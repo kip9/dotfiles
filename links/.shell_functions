@@ -1,0 +1,12 @@
+function run_vagrant() {
+	if [ "$1" == "" ]
+	then
+		exit
+	fi
+	if [ "$2" == "" ]
+	then
+		vagrant ssh default -c "$1"
+	else
+		vagrant ssh $2 -c "$1"
+	fi
+}
