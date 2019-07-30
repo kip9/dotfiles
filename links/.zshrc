@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 export LC_MESSAGES=C
+export LC_TIME=pl_PL.UTF-8
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -111,3 +112,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Use time for all commands taking longer than 10 seconds
 REPORTTIME=10
+
+# Add all SSH keys to the agent
+ssh-add -A > /dev/null 2>&1
