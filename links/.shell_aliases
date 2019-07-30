@@ -1,5 +1,6 @@
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
-alias fix_camera="sudo killall VDCAssistant"
+#alias fix_camera="sudo killall VDCAssistant"
+alias fix_camera="sudo ~/bin/replug_facetime"
 alias grepphp="grep --include '*.php'"
 alias mtr="sudo /usr/local/sbin/mtr"
 alias prettyjson="python -m json.tool"
@@ -7,9 +8,15 @@ alias spip='sudo -H pip'
 alias tm="tmux attach-session -t "
 alias ttmux="tmux -CC attach"
 
+alias fix_bluetooth="sudo launchctl stop com.apple.blued ; sudo launchctl start com.apple.blued"
+
+# Formstack
 alias fs-tests-all="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagrant && ./lib/vendor/phpunit/phpunit/phpunit -c tests/phpunit.xml tests/'"
 alias fs-tests-unit="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagrant && ./lib/vendor/phpunit/phpunit/phpunit -c tests/phpunit.xml tests/unit'"
 alias fs-tests-legacy="cd /opt/formstack/web/ && vagrant ssh default -c 'cd /vagrant && ./lib/vendor/phpunit/phpunit/phpunit -c tests/phpunit.xml tests/legacy-unit'"
+alias fs-vagrant-build="vagrant ssh default -c 'build-formstack.sh'"
+alias fs-vagrant-phinx="vagrant ssh default -c 'cd /vagrant && ./lib/vendor/bin/phinx migrate'"
+alias fs-vagrant-phinx-status="vagrant ssh default -c 'cd /vagrant && ./lib/vendor/bin/phinx status'"
 
 alias workspace-bash="docker-compose exec workspace bash"
 
