@@ -6,5 +6,6 @@ email = jjakubiec@gmail.com
 	default = simple
 [alias]
 	cleanmerged = "!git branch --merged | grep -v '^\\* master$' | grep -v '^  master$' | xargs git branch -d"
+	pullmaster = "! echo "Pulling from ${1:-upstream}" && git checkout master && git pull ${1:-upstream} master"
 [gpg]
 	program = gpg2
