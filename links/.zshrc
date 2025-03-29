@@ -99,9 +99,6 @@ alias reload='source ~/.zshrc'
 # Custom completions
 plugins+=(zsh-completions)
 
-# Enable aws completion
-source /usr/local/share/zsh/site-functions/_aws
-
 # Enable completion
 autoload -U compinit && compinit
 
