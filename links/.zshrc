@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh installation.
+ZSH_TMUX_AUTOSTART=true
 export ZSH=$HOME/.oh-my-zsh
 export LC_MESSAGES=C
 export LC_TIME=pl_PL.UTF-8
