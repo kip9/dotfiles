@@ -53,7 +53,7 @@ zstyle :omz:plugins:ssh-agent ssh-add-args --apple-load-keychain
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws brew Composer docker git gpg-agent osx ssh-agent tmux vagrant)
+plugins=(aws brew Composer docker git gpg-agent ssh-agent tmux vagrant)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
