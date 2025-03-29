@@ -47,6 +47,8 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+zstyle :omz:plugins:ssh-agent ssh-add-args --apple-load-keychain
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -114,5 +116,3 @@ export NVM_DIR="$HOME/.nvm"
 # Use time for all commands taking longer than 10 seconds
 REPORTTIME=10
 
-# Add all SSH keys to the agent
-ssh-add -A > /dev/null 2>&1
